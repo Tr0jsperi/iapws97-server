@@ -7,47 +7,47 @@ Nodejs IAPWS97 server api based on
 add functions to calculate saturation parameter
 
 ## POST methods
-post {{url}}/iapws97_PT
-{{header}} 
+	post {{url}}/iapws97_PT
+	{{header}} 
 
-{
-    "p": 3000000 , "t": 473.15
-} 
+	{
+		"p": 3000000 , "t": 473.15
+	} 
 
-post {{url}}/iapws97_PS
-{{header}} 
+	post {{url}}/iapws97_PS
+	{{header}} 
 
-{
-    "p": 3000000 , "s": 3.4
-} 
+	{
+		"p": 3000000 , "s": 3.4
+	} 
 
-post {{url}}/iapws97_PH
-{{header}} 
+	post {{url}}/iapws97_PH
+	{{header}} 
 
-{
-    "p": 3000000 , "h": 1500
-} 
+	{
+		"p": 3000000 , "h": 1500
+	} 
 
-post {{url}}/iapws97_HS
-{{header}} 
+	post {{url}}/iapws97_HS
+	{{header}} 
 
-{
-    "h": 1500 , "s": 3.40
-} 
+	{
+		"h": 1500 , "s": 3.40
+	} 
 
-post {{url}}/iapws97_P
-{{header}} 
+	post {{url}}/iapws97_P
+	{{header}} 
 
-{
-    "p": 3000000
-} 
+	{
+		"p": 3000000
+	} 
 
-post {{url}}/iapws97_T
-{{header}} 
+	post {{url}}/iapws97_T
+	{{header}} 
 
-{
-    "t": 473.15
-} 
+	{
+		"t": 473.15
+	} 
 
 
 
