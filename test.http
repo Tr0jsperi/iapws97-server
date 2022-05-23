@@ -1,0 +1,33 @@
+@url=http://localhost:3000
+@header=Content-Type:application/json
+ 
+
+ 
+###
+post {{url}}
+ 
+### 注册 (下面语句等价于“http://localhost:3001/register”)
+post {{url}}/register
+ 
+### 登录 (带请求头的port请求。注意：请求头和请求体之间必须有一个空行)
+post {{url}}/iapws97_PT
+{{header}} 
+ 
+{
+    "p": 3000000 , "t": 473.15
+} 
+###
+post {{url}}/iapws97_P
+{{header}} 
+ 
+{
+    "p": 3000000
+} 
+
+###
+post {{url}}/iapws97_T
+{{header}} 
+ 
+{
+    "t": 473.15
+} 
