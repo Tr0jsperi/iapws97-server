@@ -1,11 +1,19 @@
 # IAPWS97 Server
 
-Nodejs IAPWS97 server api based on 
+Node.js IAPWS97 server based on 
 [Neutrium.thermo.IAPWS97](https://github.com/neutrium/thermo.eos.iapws97) &
 [thermo](https://github.com/dsantonio/thermo)
 
-add functions to calculate saturation parameter
+Add functions to calculate saturation parameter
 
+## How To Use
+
+ 1. Install node.js
+ 2. `git clone https://github.com/Tr0jsperi/iapws97-server`
+ 3. `cd iapws97-server`
+ 4. `npm install`
+ 5. `node /server.js`
+ 
 ## POST methods
 	post {{url}}/iapws97_PT
 	{{header}} 

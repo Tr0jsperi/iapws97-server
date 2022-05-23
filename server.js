@@ -21,7 +21,7 @@ app.use(function (error, req, res, next) {
   }
 })
 //iapws97输入条件
-//pressure (Pa), temperature (K), enthalpy (kJ/kg.K) and entropy (kJ/K.kg). For example (in typescript):
+//pressure (Pa), temperature (K), enthalpy (kJ/kg.K) and entropy (kJ/K.kg). 
 let EoS = new neutrium.IAPWS97_EoS()
 
 app.post('/iapws97_PT', (req, res) => {
@@ -58,8 +58,8 @@ app.use(function(req, res, next) {
   next()
 })
 
-app.listen(3000, () => {
-  console.log('Server started on port 3000')
+app.listen(9008, () => {
+  console.log('Server started on port 9008')
 })
 
 function callSolve(res, inputs) {
