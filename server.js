@@ -1,7 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
-const neutrium = require('@neutrium/thermo.eos.iapws97')
+const neutrium = require('@tr0j332/thermo.eos.iapws97')
 
 const app = express()
 
