@@ -9,12 +9,14 @@ Add functions to calculate saturation parameter
 ## How To Use
 
  1. Install node.js
- 2. `git clone https://github.com/Tr0jsperi/iapws97-server`
- 3. `cd iapws97-server`
+ 2. `git clone https://github.com/Tr0jsperi/12459-server.git`
+ 3. `cd 12459-server`
  4. `npm install`
+
+    //If pm2 is installed, skip 5~6
  5. `npm install pm2 -g`
- 5. `pm2 start /server.js --name="IAPWS97Server"`
- 7. `pm2 startup`
+ 6. `pm2 startup`
+ 7. `pm2 start /server.js --name="IAPWS97Server" --watch --max-memory-restart 100M`
  
 ## POST methods
 	post {{url}}/iapws97_PT
